@@ -1,0 +1,18 @@
+{
+  "tpc": {
+    "quickScan": {
+      "commands": ["/usr/bin/nmap", "-Pn"],
+      "comment": "nmap TCP quick scan",
+      "name": "tcpQuickScan",
+      "file_name":  "tcp_quick_scan",
+      "timeout": 60
+    },
+    "completeScan": {
+      "commands": ["/usr/bin/nmap", "-Pn", "-sV", "-sC", "-p-", "-A"],
+      "comment": "nmap TCP complete scan",
+      "name": "tcpCompleteScan",
+      "file_name":  "tcp_complete_scan",
+      "timeout": 600
+    }
+  }
+}
